@@ -1,0 +1,71 @@
+<!-- Than Nguyen; Louisiana Tech University c/o 2022-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Than Nguyen - Home</title>
+		<meta name="description" content="Than Nguyen's Personal Website">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+		<!-- Linking icon library -->
+		<script src="https://kit.fontawesome.com/3a76fa03fc.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body class="body">
+		<div class="navigationBar" id="myNavigationBar">
+			
+			<!-- home button -->
+			<a class="homeButton" href="./index.html" style="grid-area: 1/1/span 1/span 1;">
+				<button class="navigationButton">
+					<i class="fas fa-bolt"></i>
+					Than Nguyen
+				</button>
+			</a>
+
+			<!-- about me button -->
+			<a class="aboutMeButton" href="./aboutme.html" style="grid-area: 1/97/span 1/span 1;">
+				<button class="navigationButton">
+					<i class="fas fa-smile"></i>
+					About Me
+				</button>
+			</a>
+
+			<!-- education -->
+			<a class="educationButton"href="./education.html" style="grid-area: 1/98/span 1/span 1;">
+				<button class="navigationButton">
+					<i class="fas fa-graduation-cap"></i>
+					Education
+				</button>
+			</a>
+
+			<!-- Some of my work button -->
+			<a class="workButton"href="./mywork.html" style="grid-area: 1/99/span 1/span 1;">
+				<button class="navigationButton">
+					<i class="fas fa-graduation-cap"></i>
+					My Work
+				</button>
+			</a>
+
+			<!-- hamburger menu for smaller width screens -->
+			<a class="hamburgerIcon">
+				<button class="navigationButton" onclick="myFunction()">
+					<i class="fas fa-bars"></i>
+				</button>
+  			</a>
+		</div>
+		<br/>
+		<br/>
+		Home
+		<script>
+			function myFunction() {
+  				var navigationBar = document.getElementById("myNavigationBar");
+  				if (navigationBar.className == "navigationBar") {
+    				navigationBar.className += "Responsive";
+  				} else {
+    				navigationBar.className = "navigationBar";
+  				}
+  				console.log(navigationBar);
+			}
+		</script>
+	</body>
+</html>
